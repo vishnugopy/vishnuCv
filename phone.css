@@ -1,0 +1,44 @@
+@media only screen and (max-width: 600px) {
+    section {
+    width: 95%;
+    }
+
+    .home{
+        flex-wrap: wrap;
+    }.mainlogo{
+        width: 50%;
+    }
+
+    .flex{
+        flex-wrap: wrap;
+    }.flex div{
+        width: 90%;
+
+    }
+    
+    .timeline{
+    flex-direction: column;
+    padding: 0.5%;
+
+    }.timeline img{
+        border-right: none;
+        border-bottom: 0.5px var(--primary2) solid;
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
