@@ -1,7 +1,10 @@
 @media only screen and (max-width: 1024px) {
     section {
     width: 95%;
+    padding: 2%;
+    box-sizing: content-box;
     }
+
 
     nav{
         display: none;
@@ -17,7 +20,7 @@
     .flex{
         flex-wrap: wrap;
     }.flex div{
-        width: 90%;
+        width: 100%;
 
     }
     
@@ -25,14 +28,29 @@
     flex-direction: column;
     padding: 20% 0.5% 20% 0.5%;
 
-    }.timeline img{
+    }.timeline a{
         border-right: none;
      }
 
 
      .contact a{
-        width: 98%;
+        width: 100%;
        
+    }
+
+    
+    .taletblog{
+        flex-wrap: wrap;
+        padding: 20% 1%;
+        
+
+    }.imgframe{
+        width: 100%;
+        height: auto;
+    }
+
+    .imgframe img{
+        height:40px;
     }
 
 

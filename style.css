@@ -9,6 +9,18 @@
 --textgrey:#7e7e7e;
 }
 
+body::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: var(--primary);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--primary);
+    outline: 1px solid slategrey;
+  }
 
 html {
     scroll-behavior: smooth;
@@ -19,6 +31,7 @@ body{
     padding: 0;
     font-family: 'Mulish', sans-serif;
     background-color: white;
+    box-sizing:border-box;
     
 }
 
@@ -45,7 +58,7 @@ nav a{
 }
 
 .mainlogo{
-    margin:5% 0%;
+    margin:5% 0% 0% 0%;
     width:20%;
     border: white 1px solid;
     border-radius: 50%;
@@ -138,6 +151,10 @@ button{
     margin: 1.5% auto;
     border-radius: 5px;
 }.timeline img{
+    width: 100px;
+    height: 100px;
+    
+}.timeline a {
    width: 100px;
    height: 100px;
    padding: 1% 2%;
@@ -148,13 +165,36 @@ button{
     width: 70%;
     padding: 1%;
     margin: 0 auto;
-}.timeline img:hover{
+}.timeline a:hover{
     filter: none;
 }.timeline h4{
     color: var(--textgrey);
 }
 
 
+
+.taletblog{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 
+    2px 2px 2px 0 rgba(0, 0, 0, 0.25),
+    -1px -1px 1.5px 0 rgba(255, 255, 255, 0.3);
+    margin: 1% auto;
+    padding: 2%;
+}
+.imgframe{
+    display: flex;
+    align-items: center;
+    padding: 2%;
+}.imgframe img{
+    height: 50px;
+    margin: 2%;
+    filter: grayscale(100%);
+}.imgframe img:hover{
+    filter: none;
+}
 
 
 h4 span{
@@ -171,7 +211,7 @@ h3{
 }
 
 div{
-   border: 0.01px solid rgb(110, 110, 110); 
+   /* border: 0.01px solid rgb(110, 110, 110);  */
 }
 
 
