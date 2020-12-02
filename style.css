@@ -6,6 +6,7 @@
 --primary:#035E7B;
 --primary2:rgba(3, 94, 123 , 0.3);
 --white:#ffffff;
+--textgrey:#7e7e7e;
 }
 
 
@@ -35,6 +36,7 @@ nav{
     position: fixed;
     z-index: 1;
     
+    
 }
 
 nav a{
@@ -60,9 +62,9 @@ button{
     font-family: 'Mulish', sans-serif;
     width: 100%;
     height:30%;
-    padding:0.5% 10% 0.5% 10%;
+    padding:0.5% 3% 0.5% 3%;
     align-items: center;
-    margin: 1% 0%;
+    margin: 1% auto;
     border: none;
     background-color: var(--primary);
     color: var(--white);
@@ -70,6 +72,10 @@ button{
     justify-content: center;
     outline: none;
     font-size: 15px;
+    box-shadow: 
+    2px 2px 2px 0 rgba(0, 0, 0, 0.25),
+    -1px -1px 1.5px 0 rgba(255, 255, 255, 0.3);
+    cursor: pointer;
 }button div{
     display: flex;
     justify-content:flex-start;
@@ -80,7 +86,7 @@ button{
     color: white;
     justify-content: flex-start;
 }button div i{
-    margin:0% 10%;
+    margin:0% 5% 0% 35%;
 }
 
 .home{
@@ -88,6 +94,7 @@ button{
     justify-content: center;
     align-items: center;
     padding: 3%;
+    
 }.home div{
     padding: 2%;
 }
@@ -99,20 +106,24 @@ button{
     width: 45%;
     margin: 0% 2% 0% 0%;
     padding: 1%;
+    
 }
 
 .contact{
     padding: 2%;
+}.contact a{
+    width: 48%;
+    height: 30%;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0.5%;
 }
 .contact button div{
-    width: 95%;
+    width: 98%;
 }
 .contact .wraper{
     display: flex;
     flex-wrap: wrap;
-}.contact .wraper button{
-    width: 48%;
-    margin: 1%;
 }
 
 .big{
@@ -132,16 +143,23 @@ button{
    padding: 1% 2%;
    border-right: 0.5px var(--primary2) solid;
    margin: 0 auto;
+   filter: grayscale(100%);
 }.timeline div{
     width: 70%;
     padding: 1%;
     margin: 0 auto;
+}.timeline img:hover{
+    filter: none;
+}.timeline h4{
+    color: var(--textgrey);
 }
 
 
 
 
-
+h4 span{
+    font-weight: 500;
+}
 
 
 h1 , h4{
@@ -153,7 +171,7 @@ h3{
 }
 
 div{
-    /* border: 0.01px solid rgb(110, 110, 110); */
+   border: 0.01px solid rgb(110, 110, 110); 
 }
 
 
