@@ -27,6 +27,7 @@
     .timeline{
     flex-direction: column;
     padding: 5% 0.5% 20% 0.5%;
+    margin: 5% auto;
 
     }.timeline a{
         border-right: none;
@@ -42,6 +43,7 @@
     .taletblog{
         flex-wrap: wrap;
         padding: 10% 2% 20% 2%;
+        margin: 5% auto;
         
 
     }.imgframe{
@@ -49,13 +51,14 @@
         height: auto;
     }
 
-    .imgframe img{
-        height:40px;
+    .imgframe a{
+        height:30px;
     }
 
-    .imgframe img{
-        height: 30px;
+    .imgframe a img{
+        height:30px;
     }
+
 
     .quality div{
         margin: 3% auto;

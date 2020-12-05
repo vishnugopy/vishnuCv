@@ -117,7 +117,7 @@ button{
 
 .flex{
     display: flex;
-    justify-content: center; 
+    justify-content: space-around; 
 }.flex div{
     width: 45%;
     margin: 0% 2% 0% 0%;
@@ -196,13 +196,14 @@ button{
     padding: 2%;
     justify-content: center;
     flex-wrap: wrap;
-}.imgframe img{
-    height: 60px;
-    width: auto;
+}.imgframe a{
     margin: 2%;
-    filter: grayscale(100%);
     padding: 1%;
-}.imgframe img:hover{
+}.imgframe a img{
+    height: 60px;
+    filter: grayscale(100%);
+
+}.imgframe a img:hover{
     filter: none;
 }
 
@@ -212,6 +213,7 @@ button{
                 1px 1px 3px rgba(0, 0, 0, 0.2);
     margin: 1% auto;
     padding: 1%;
+    border-radius: 5px;
 }
 
 h4 span{
