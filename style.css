@@ -2,7 +2,7 @@
 
 
 :root{
---bg-color:white;
+--bg-color:#f0faff;
 --primary:#035E7B;
 --primary2:rgba(14, 73, 181 , 0.8);
 --white:#ffffff;
@@ -56,6 +56,10 @@ nav a{
     text-decoration: none;
     color: var(--primary);
     font-weight: 700;
+}
+
+nav a:hover{
+    color: var(--black);
 }
 
 .mainlogo{
@@ -191,6 +195,7 @@ button{
     width: 100%;
     padding: 2%;
     justify-content: center;
+    flex-wrap: wrap;
 }.imgframe img{
     height: 60px;
     width: auto;
@@ -203,9 +208,9 @@ button{
 
 
 .quality div{
-    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
-                3px 3px 5px rgba(0, 0, 0, 0.2);
-                margin: 1% auto;
+    box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.8),
+                1px 1px 3px rgba(0, 0, 0, 0.2);
+    margin: 1% auto;
     padding: 1%;
 }
 
@@ -243,6 +248,8 @@ footer{
     background: var(--primary);
     text-align: center;
     padding: 3% 2%;
+    
+}footer h4{
     color: var(--white);
 }
 

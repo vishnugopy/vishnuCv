@@ -53,6 +53,14 @@
         height:40px;
     }
 
+    .imgframe img{
+        height: 30px;
+    }
+
+    .quality div{
+        margin: 3% auto;
+    }
+
     h1{
         font-size: 5vw;
     }
