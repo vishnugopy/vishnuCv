@@ -35,9 +35,10 @@ body{
     background-color:var(--bg-color);
     box-sizing:border-box;
     overflow-x: hidden;
-    max-width:100%;
-    
+    max-width:100%;   
 }
+
+
 
 section{
     width: 60%;
@@ -276,4 +277,27 @@ footer{
     
 }footer h4{
     color: var(--white);
+}
+
+.arrow{
+    opacity: 0.2;
+    position: fixed;
+    margin:5%;
+    font-size: 5vh;
+    animation: jump 1s infinite;
+    right: 0;
+}
+
+
+@keyframes jump{
+    0%{
+        transform: translateY(20px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+    
 }
