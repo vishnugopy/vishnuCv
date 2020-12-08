@@ -13,14 +13,16 @@
 
 body::-webkit-scrollbar {
     width: 1em;
+    background: linear-gradient(var(--primary), var(--primary2));
   }
 
-  
-   
-  body::-webkit-scrollbar-thumb {
-    background-color: var(--black);
-    outline: 5px solid var(--black);
+    
+body::-webkit-scrollbar-thumb {
+    background-color: var(--light);
+    border-radius: 2px;
   }
+
+
 
 html {
     scroll-behavior: smooth;
@@ -32,6 +34,8 @@ body{
     font-family: 'Mulish', sans-serif;
     background-color:var(--bg-color);
     box-sizing:border-box;
+    overflow-x: hidden;
+    max-width:100%;
     
 }
 
@@ -104,6 +108,12 @@ button{
     justify-content: flex-start;
 }button div i{
     margin:0% 5% 0% 35%;
+}
+
+button:hover{
+    color: var(--light);
+    background: var(--black);
+    transition: 0.5s;
 }
 
 .home{
@@ -243,75 +253,27 @@ h2{
     
 }
 
-div{
-   /* border: 0.01px solid rgb(110, 110, 110); */
+ .box{
+   opacity: 0;
+   transform: translateY(500px);
+   transition: 0.5s all ease-in-out;
+
 }
 
+.into-appear{
+    opacity: 1;
+    transform: translateY(0px);
+   
+} 
+
 footer{
+    display: block;
     background: var(--primary);
     text-align: center;
+    margin-top: 20%;
     padding: 3% 2%;
+
     
 }footer h4{
     color: var(--white);
 }
-
-.animate {
-    animation: animate .3s ease-in-out forwards;
-  }
-
-
-  .slideUp {
-    animation-name: slideUp;
-    -webkit-animation-name: slideUp;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    visibility: visible;
-  }
-  
-  @keyframes animate {
-    from {
-      background-color: cornflowerblue;
-      border-radius: 0;
-    }
-    to {
-      background-color: green;
-      border-radius: 100px;
-    }
-  }
-
-@keyframes filter-animation {
-    0% {
-      filter: hue-rotate(0deg);
-    }
-
-    
-    100% {
-      filter: hue-rotate(555deg);
-    }
-  }
-
-  @keyframes slideUp {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
-  
-  @-webkit-keyframes slideUp {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
-  
-
- 

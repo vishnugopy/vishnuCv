@@ -80,12 +80,25 @@
         font-size: 3.5vw;
     }
 
+    
+    i{
+        font-size: 3.5vw;
+    }
+
     h5{
         font-size: 3vw;
     }
 
     p{
         font-size: 3.5vw;
+    }
+
+    footer{
+
+        margin-top: 50%;
+        padding: 10% 2%;
+    
+        
     }
 
 
