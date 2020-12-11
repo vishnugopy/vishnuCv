@@ -85,26 +85,34 @@ nav a:hover{
     color: var(--black);
 }
 
-.switch{
- position: fixed;
- color: var(--black);
- right: 0;
- bottom: 0;
- margin: 0.5%;
- background: var(--primary);
- border-radius: 30px;
- width: 3%;
- height: 3%;
- padding: 0.5%;
- font-size: 20px;
- display: flex;
- justify-content: space-between;
- align-items: center;
-}.switch a{
-    color: var(--white);
-    text-decoration: none;
-    margin:8% ;
-    
+.dropdown{
+    color: var(--primary);
+    cursor: pointer;
+}.dropdown:hover{
+    color: var(--black);
+}.dropdown:hover .dropdown-content {
+    display: block;
+}.swt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--black);
+    margin: 5px;
+}.swt:hover{
+    color:var(--white);
+}.swt:hover i{
+    color:var(--white);
+}.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:var(--primary);
+    min-width: 15%;
+    padding: 1%;
+    border-radius: 5px;
+    z-index: 1;
+}.dropdown-content i{
+    color: var(--black);
+    margin-right: 10px ;
 }
 
 

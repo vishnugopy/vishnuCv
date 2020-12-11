@@ -6,8 +6,14 @@
     }
 
 
+    nav a{
+       display: none; 
+       
+    }
+
     nav{
-        display: none;
+        position: absolute;
+       background: none;
     }
 
 
