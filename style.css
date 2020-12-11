@@ -1,15 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-:root{
---bg-color:white;
---primary:#035E7B;
---primary2:rgba(14, 73, 181 , 0.8);
---white:#ffffff;
---textgrey:#7e7e7e;
---black:#000000;
---light:#aee6e6;
+
+.light {
+    --bg-color:white;
+    --primary:#035E7B;
+    --primary2:rgba(14, 73, 181 , 0.8);
+    --white:#ffffff;
+    --textgrey:#7e7e7e;
+    --black:#000000;
+    --light:#aee6e6;
+    --bgwhite:white;
 }
+  
+
+.dark {
+    --bg-color:black;
+    --primary:rgb(0, 255, 255);
+    --primary2:rgba(0, 255, 255 , 0.7);
+    --white:black;
+    --textgrey:#7e7e7e;
+    --black:white;
+    --light: #035E7B;
+    --bgwhite:white;
+}
+
 
 body::-webkit-scrollbar {
     width: 1em;
@@ -36,6 +51,8 @@ body{
     box-sizing:border-box;
     overflow-x: hidden;
     max-width:100%;   
+    color: var(--black);
+    transition: all 0.2s ease-in;
 }
 
 
@@ -68,12 +85,36 @@ nav a:hover{
     color: var(--black);
 }
 
+.switch{
+ position: fixed;
+ color: var(--black);
+ right: 0;
+ bottom: 0;
+ margin: 0.5%;
+ background: var(--primary);
+ border-radius: 30px;
+ width: 3%;
+ height: 3%;
+ padding: 0.5%;
+ font-size: 20px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}.switch a{
+    color: var(--white);
+    text-decoration: none;
+    margin:8% ;
+    
+}
+
+
+
 .mainlogo{
     margin:5% 0% 0% 0%;
     width:20%;
-    border: white 1px solid;
+    border: var(--white) 1px solid;
     border-radius: 50%;
-    background-color: var(--white);
+    background-color: var(--bgwhite);
     animation: filter-animation 30s infinite;
     animation-timing-function: ease;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
@@ -95,8 +136,6 @@ button{
     justify-content: center;
     outline: none;
     font-size: 15px;
-    box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.8),
-                3px 3px 5px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }button div{
     display: flex;
@@ -105,16 +144,38 @@ button{
     
 }button div a{
     text-decoration: none;
-    color: white;
     justify-content: flex-start;
 }button div i{
     margin:0% 5% 0% 35%;
 }
 
+button div h3{
+    color: var(--black);
+}
+
+
 button:hover{
-    color: var(--light);
-    background: var(--black);
+    background: var(--primary2);
     transition: 0.5s;
+}
+
+.contact{
+    padding: 1%;
+}.contact a{
+    width: 48%;
+    height: 30%;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0.5%;
+    
+}
+.contact button div{
+    width: 98%;
+    color: var(--black);
+}
+.contact .wraper{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .home{
@@ -140,22 +201,7 @@ button:hover{
     
 }
 
-.contact{
-    padding: 1%;
-}.contact a{
-    width: 48%;
-    height: 30%;
-    text-decoration: none;
-    cursor: pointer;
-    margin: 0.5%;
-}
-.contact button div{
-    width: 98%;
-}
-.contact .wraper{
-    display: flex;
-    flex-wrap: wrap;
-}
+
 
 .big{
     padding: 1%;
@@ -163,8 +209,8 @@ button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
-                3px 3px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: -1px -1px 1px rgba(122, 122, 122, 0.8),
+    1px 1px 1px rgba(58, 58, 58, 0.2);
     margin: 1.5% auto;
     z-index: 2;
     border-radius: 5px;
@@ -195,8 +241,8 @@ button:hover{
     justify-content: space-between;
     align-items: center;
     border-radius: 5px;
-    box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
-                3px 3px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: -1px -1px 1px rgba(122, 122, 122, 0.8),
+    1px 1px 1px rgba(58, 58, 58, 0.2);
     margin: 1% auto;
     padding: 2%;
     flex-wrap: wrap;
@@ -221,8 +267,8 @@ button:hover{
 
 
 .quality div{
-    box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.8),
-                1px 1px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: -1px -1px 1px rgba(122, 122, 122, 0.8),
+    1px 1px 1px rgba(58, 58, 58, 0.2);
     margin: 1% auto;
     padding: 1%;
     border-radius: 5px;
@@ -235,6 +281,7 @@ h4 span{
 
 h1 {
     margin: 0 auto;
+    color: var(--black);
     
 }
 
@@ -247,6 +294,7 @@ h4{
 
 h3{
     margin: 0;
+    color: var(--black);
 }
 
 h2{
@@ -274,15 +322,17 @@ footer{
     margin-top: 20%;
     padding: 3% 2%;
 
+
     
 }footer h4{
     color: var(--white);
 }
 
 .arrow{
-    opacity: 0.2;
+    color: var(--black);
+    opacity: 0.1;
     position: fixed;
-    margin:5%;
+    margin:1.5%;
     font-size: 5vh;
     animation: jump 1s infinite;
     right: 0;
