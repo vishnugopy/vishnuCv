@@ -105,7 +105,7 @@ nav a:hover{
 }.dropdown-content {
     display: none;
     position: absolute;
-    background-color:var(--primary);
+    background-color:var(--primary2);
     min-width: 15%;
     padding: 1%;
     border-radius: 5px;
