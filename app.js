@@ -26,11 +26,11 @@ const body = document.body;
 // Apply the cached theme on reload
 
 const theme = localStorage.getItem('theme');
-const isSolar = localStorage.getItem('isSolar');
+const dark = localStorage.getItem('dark');
 
 if (theme) {
   body.classList.add(theme);
-  isSolar && body.classList.add('solar');
+  dark && body.classList.add('dark');
 }
 
 // Button Event Handlers
