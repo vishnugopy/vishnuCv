@@ -1,3 +1,3 @@
-### Hi there 👋###
+### Hi there 👋
 
-##🌱 I’m currently learning javascript ##
+🌱 I’m currently learning javascript ##
