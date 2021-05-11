@@ -1,3 +1,3 @@
 ### Hi there 👋
 
-🌱 I’m currently learning javascript
+🌱Je suis un développeur javascript et j'apprends des trucs 😋
